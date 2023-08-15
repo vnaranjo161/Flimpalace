@@ -7,7 +7,7 @@
 }
 header{
     background: url(../images/avengersHeader.jpg);
-    height: 550px;
+    height: 500px;
     background-color: #000;
     background-size:60vw ;
     background-repeat: no-repeat;
@@ -15,7 +15,9 @@ header{
     border-bottom: 1px solid rgb(138, 138, 138);
 }
 body{
-    background-color: #161616;
+    background-image: url(../images/fondoprueba.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 nav{
     display: flex;
@@ -82,45 +84,46 @@ img{
     margin: 20px;
 }
 .peliculasYSeries{
-    width: 250px;
-    height: 300px;
+    width: 230px;
+    height: 320px;
     align-items: center;
     border-radius: 6px;
     background: var(--i);
     background-size: cover;
+    margin: 50px;
 }
-
+.titulo{
+    color:#fff;
+}
 .ContainerInfo{
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, .4);
+    justify-content: space-between;
+    background: rgba(0, 0, 0, .5);
     opacity: 0;
     transition: .5s;
+    color: white;
+    padding: 1px;
+    text-align: center;
 }
 
 .peliculasYSeries:hover .ContainerInfo{
     opacity: 1;
 }
-.description{
-    color:rgb(187, 181, 181);
-}
-.genero{
-    color:rgb(187, 181, 181);
-}
+
 .trailer{
     border-radius: 5px;
     padding: 3px;
-    background-color: rgba(255, 255, 255, 0);
-    border: 2px solid #05868a;
+    background-color: rgba(118, 118, 118, 0.713);
+    color: white;
     
 }
 .trailer a{
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
 }
 #nosotros{
     font-size: 25px;
