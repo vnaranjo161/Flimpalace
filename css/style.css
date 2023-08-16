@@ -6,13 +6,26 @@
     font-family: 'Amatic SC', cursive;
 }
 header{
-    background: url(../images/avengersHeader.jpg);
-    height: 500px;
     background-color: #000;
     background-size:60vw ;
     background-repeat: no-repeat;
     background-position: center;
     border-bottom: 1px solid rgb(138, 138, 138);
+}
+.imgp{
+    border-radius: 10px;
+}
+.hola{
+    width: 900px;
+    height: 500px;
+    background-image: url(../images/avengersHeader.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hola1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 body{
     background-image: url(../images/fondoprueba.webp);
