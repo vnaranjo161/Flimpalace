@@ -84,6 +84,7 @@ nav{
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 50px;
+    justify-content: center;
 }
 img{
     max-width: 200px;
@@ -155,7 +156,6 @@ img{
     border-radius: 30px;
   }
   
-  /* Estilos para el contenido de la ventana modal */
   .modal-content {
     display: block;
     position: absolute;
@@ -166,9 +166,9 @@ img{
     padding: 3%;
     border: 1px solid #888;
     width: 75%;
+    border-radius: 3%;
   }
   
-  /* Estilos para el botón de cierre */
   .close img{
     float: right;
     width: 20px;
@@ -180,7 +180,6 @@ img{
   }
   
   
-  /* Estilos para el contenedor de video */
   .video-container {
     position: relative;
     overflow: hidden;
@@ -321,6 +320,9 @@ img{
     .header2{
         height: 170px;
     }
+    .close img{
+        width: 10px;
+      }
 }
 
 
@@ -340,6 +342,9 @@ img{
     .header2{
         height: 270px;
     }
+    .close img{
+        width: 10px;
+      }
 }
 
 .filtro{
