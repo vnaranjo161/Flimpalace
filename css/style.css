@@ -196,6 +196,33 @@ img{
 
   }
 
+
+
+/*carrusel*/
+  .carouselContainer {
+    display: flex;
+    overflow: hidden;
+    width: 100%; 
+    margin: auto;
+}
+.carousel {
+    display: flex;
+    animation: carouselAnimation 30s linear infinite;
+}
+.carousel img {
+    width: 400px; 
+    height: auto;
+    border-radius: 10px;
+}
+@keyframes carouselAnimation {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/*----------------------------------------------------*/
  
   @media (min-width:352px) and (max-width:480px) {
     .header2{

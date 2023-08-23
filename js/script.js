@@ -60,3 +60,9 @@ document.addEventListener('keyup', e => {
       });
   }
 });
+
+
+// Iniciar el carrusel cuando la página carga
+window.onload = function () {
+  updateCarouselPosition();
+  };
