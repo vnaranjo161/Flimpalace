@@ -84,7 +84,6 @@ nav{
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 50px;
-    justify-content: center;
 }
 img{
     max-width: 200px;
@@ -156,6 +155,7 @@ img{
     border-radius: 30px;
   }
   
+  /* Estilos para el contenido de la ventana modal */
   .modal-content {
     display: block;
     position: absolute;
@@ -166,9 +166,9 @@ img{
     padding: 3%;
     border: 1px solid #888;
     width: 75%;
-    border-radius: 3%;
   }
   
+  /* Estilos para el botón de cierre */
   .close img{
     float: right;
     width: 20px;
@@ -180,6 +180,7 @@ img{
   }
   
   
+  /* Estilos para el contenedor de video */
   .video-container {
     position: relative;
     overflow: hidden;
@@ -197,7 +198,7 @@ img{
   }
 
  
-  @media (min-width:352px) and (max-width:480px) {
+  @media screen and (min-width:352px) and (max-width:480px) {
     .header2{
         background-image: url(../images/avengersHeader.jpg);
         height: 100px;
@@ -320,14 +321,11 @@ img{
     .header2{
         height: 170px;
     }
-    .close img{
-        width: 10px;
-      }
 }
 
 
 
-@media (min-width:481px) and (max-width:768px) {
+@media screen and (max-width:768px) {
     #menuHorizontal{
         margin-left: 20px;
     }
@@ -342,9 +340,40 @@ img{
     .header2{
         height: 270px;
     }
-    .close img{
-        width: 10px;
-      }
+}
+
+@media screen and (max-width:480px){
+    #buscador{
+        order: 1;
+    }
+    #menuHorizontal{
+        order:2;
+    }
+
+    nav{
+        flex-direction: column;
+        height: auto;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    .responsive{
+        margin-top: 10px;
+    }
+
+    #menuHorizontal li{
+        padding: 2px 5px 0px 6px;
+    }
+
+    input#buscadorCategorias{
+        width: 30px;
+    }
+
+    input#buscador{
+        padding-left: 10px;
+        margin-right: 20px;
+        width: 150px;
+    }
 }
 
 .filtro{
