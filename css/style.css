@@ -163,9 +163,9 @@ img{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fefefe;
+    background-color: #000000;
     padding: 3%;
-    border: 1px solid #888;
+    border: none;
     width: 75%;
     border-radius: 3%;
   }
@@ -219,7 +219,7 @@ img{
 }
 @keyframes carouselAnimation {
     0% {
-        transform: translateX(50%);
+        transform: translateX(70%);
     }
     100% {
         transform: translateX(-100%);
