@@ -82,8 +82,9 @@ nav{
 .container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     padding: 50px;
+    justify-content: center;
+
 }
 img{
     max-width: 200px;
@@ -166,6 +167,7 @@ img{
     padding: 3%;
     border: 1px solid #888;
     width: 75%;
+    border-radius: 3%;
   }
   
   /* Estilos para el botón de cierre */

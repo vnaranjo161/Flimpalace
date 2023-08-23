@@ -1,3 +1,4 @@
+//Buscador por nombres 
 document.addEventListener('keyup', e => {
     if (e.target.matches('#buscador')) {
         const searchTerm = e.target.value.toLowerCase();
@@ -12,9 +13,22 @@ document.addEventListener('keyup', e => {
         });
     }
 });
+//----------------------------------------------------
+// Buscador de categorias
+document.addEventListener('keyup', e => {
+  if (e.target.matches('#buscadorCategorias')) {
+      const searchTerm = e.target.value.toLowerCase();
+      document.querySelectorAll('.peliculasYSeries').forEach(pelicula => {
+         const titulo = pelicula.querySelector('.genero').textContent.toLowerCase();
+         if (titulo.includes(searchTerm)) {
+          pelicula.classList.remove("filtro");
+         } else {
+          pelicula.classList.add("filtro");
+         }
 
-
-
+      });
+  }
+});
 //----------------------------------------------------
 const modal = document.getElementById('myModal');
 const modalBtns = document.querySelectorAll('.modal-btn');
@@ -44,23 +58,6 @@ window.addEventListener('click', (event) => {
     videoFrame.setAttribute('src', '');
   }
 });
-
-
-document.addEventListener('keyup', e => {
-  if (e.target.matches('#buscadorCategorias')) {
-      const searchTerm = e.target.value.toLowerCase();
-      document.querySelectorAll('.peliculasYSeries').forEach(pelicula => {
-         const titulo = pelicula.querySelector('.genero').textContent.toLowerCase();
-         if (titulo.includes(searchTerm)) {
-          pelicula.classList.remove("filtro");
-         } else {
-          pelicula.classList.add("filtro");
-         }
-
-      });
-  }
-});
-
 
 // Iniciar el carrusel cuando la página carga
 window.onload = function () {
